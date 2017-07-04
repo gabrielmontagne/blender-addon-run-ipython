@@ -2,7 +2,7 @@ bl_info = {
   "name": "Run IPython in console",
   "author": "Gabriel Montagné Láscaris-Comneno",
   "warning": "You should be running Blender with IPython in your Python path."
-              "Blender won't re-render until you're done!",
+              "Blender won't redraw until you're done!",
   "category": "Development",
 }
 
