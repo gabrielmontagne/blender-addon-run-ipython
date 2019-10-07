@@ -4,6 +4,7 @@ bl_info = {
   "warning": "You should be running Blender with IPython in your Python path."
               "Blender won't re-render until you're done!",
   "category": "Development",
+  "blender": (2, 80, 0)
 }
 
 import bpy
