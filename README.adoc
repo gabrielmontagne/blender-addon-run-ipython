@@ -1,0 +1,11 @@
+Run IPython from Blender
+========================
+
+Requires Blender's Python to have access to IPython, either by using your system's Python, or by adding your module folders to `sys.path`
+
+To use: 
+
+* Space to bring up the search, and find 'Run IPython in console'
+* On the console from which you started blender, you'll get the IPython console---the UI will stop rendering until you're done, exit the console and return the control to the blender UI.
+
+image:blender-addon-run-ipython.png[Screenshot]
