@@ -5,8 +5,10 @@ Requires Blender's Python to have access to IPython.
 
 You can, for example, 
 
+----
 '/INSTALLED_BLENDER_PATH/2.XX/python/bin/python3.7m' -m ensurepip
 '/INSTALLED_BLENDER_PATH/2.XX/python/bin/python3.7m' -m pip install ipython
+----
 
 To use: 
 
