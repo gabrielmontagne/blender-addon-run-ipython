@@ -8,15 +8,24 @@ bl_info = {
 }
 
 import bpy
+from bpy.props import IntProperty, FloatProperty, StringProperty, BoolProperty
 
 class RunIPythonOperator(bpy.types.Operator):
     """Run IPython Operator"""
     bl_idname = "run_ipython.run"
     bl_label = "Run IPython in console"
 
+    reduce_logging: BoolProperty(default=True, name='ears')
+
     def execute(self, context):
         try:
             import IPython
+            import logging
+
+            if self.reduce_logging:
+                print('reduce logging')
+                logging.getLogger().setLevel(logging.ERROR)
+
             IPython.embed()
         except:
             self.report({'ERROR'}, "Couldn't import IPython")
